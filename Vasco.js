@@ -180,4 +180,10 @@ const vasco_titulos = [
 if(vasco_titulos.length > guarani_titulos.length){
     console.log('vasco > guarani');
 };
+for(let i = 0; i < vasco_titulos.length; i++){
+    console.table(vasco_titulos[i]);
+};
+for(let i = 0; i < guarani_titulos.length; i++){
+    console.table(guarani_titulos[i]);
+};
 
