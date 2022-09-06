@@ -177,13 +177,19 @@ const vasco_titulos = [
         tamanho: "municipal"
     }
 ];
-if(vasco_titulos.length > guarani_titulos.length){
-    console.log('vasco > guarani');
-};
+let vas = 0
+let gua = 0
 for(let i = 0; i < vasco_titulos.length; i++){
-    console.table(vasco_titulos[i]);
+    let titulo_v = vasco_titulos[i].quantidade;
+    vas = vas + titulo_v
 };
 for(let i = 0; i < guarani_titulos.length; i++){
-    console.table(guarani_titulos[i]);
+    let titulo_g = guarani_titulos[i].quantidade;
+    gua = titulo_g + gua
 };
+if(gua >= vas){
+    console.log("vasco pequeno")
+}else{
+    console.log("vasco maior que guarani")
+}
 
