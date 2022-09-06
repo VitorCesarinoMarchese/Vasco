@@ -1,3 +1,4 @@
+//Titulos do guarani
 const guarani_titulos = [
     {
         nome: "Campeonato Brasileiro",
@@ -42,7 +43,7 @@ const guarani_titulos = [
         tamanho: "Municipal"
     }
 ];
-
+// Titulos do vasco
 const vasco_titulos = [
     {
         nome:"Octogonal Rivadávia Corrêa Meyer",
@@ -177,16 +178,22 @@ const vasco_titulos = [
         tamanho: "municipal"
     }
 ];
+// Variaveis que contam os titulos de cada um
 let vas = 0
 let gua = 0
 for(let i = 0; i < vasco_titulos.length; i++){
+    // Pega a quantidade de titulos do vasco
     let titulo_v = vasco_titulos[i].quantidade;
+    // incrementando a variavel da linha 182
     vas = vas + titulo_v
 };
 for(let i = 0; i < guarani_titulos.length; i++){
+        // Pega a quantidade de titulos do guarani
     let titulo_g = guarani_titulos[i].quantidade;
+        // incrementando a variavel da linha 183
     gua = titulo_g + gua
 };
+// Compara os dois
 if(gua >= vas){
     console.log("vasco pequeno")
 }else{
